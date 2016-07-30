@@ -13,10 +13,10 @@ namespace OdeTofood.Controllers
 
         public ActionResult Search(string name)
         {
-            // Perform HTML encoding to prevent a cross-site scripting attack. (Very, very bad to send raw content to
-            // the browser.
-            var message = Server.HtmlEncode(name);
-            return Content(string.Format("Hello, {0}!", name));
+            // Because the name parameter is not present in the `Index` action of the `Home` controller, this 
+            // (temporary) redirect results in MVC simply appending the query string, for example, "?name=swedish," for
+            // the route "/Cuisine/swedish."
+            return RedirectToAction("Index", "Home", new {name = name});
         }
 
     }
