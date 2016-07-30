@@ -13,10 +13,8 @@ namespace OdeTofood.Controllers
 
         public ActionResult Search(string name)
         {
-            // Because the name parameter is not present in the `Index` action of the `Home` controller, this 
-            // (temporary) redirect results in MVC simply appending the query string, for example, "?name=swedish," for
-            // the route "/Cuisine/swedish."
-            return RedirectToAction("Index", "Home", new {name = name});
+            // Temporarily redirect to the default route passing the specified parameters.
+            return RedirectToRoute("Default", new {controller = "Home", action = "About"});
         }
 
     }
