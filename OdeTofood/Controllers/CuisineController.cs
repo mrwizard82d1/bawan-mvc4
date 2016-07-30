@@ -13,8 +13,7 @@ namespace OdeTofood.Controllers
 
         public ActionResult Search(string name)
         {
-            // Temporarily redirect to the default route passing the specified parameters.
-            return RedirectToRoute("Default", new {controller = "Home", action = "About"});
+            return File(Server.MapPath("~/Content/site.css"), "text/css");
         }
 
     }
