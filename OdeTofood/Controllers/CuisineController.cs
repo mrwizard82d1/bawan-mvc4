@@ -14,7 +14,7 @@ namespace OdeTofood.Controllers
         public ActionResult Search(string name)
         {
             var message = Server.HtmlEncode(name);
-            return Json(new {Message = message, Name = "Mr. Wizard"});
+            return Json(new {Message = message, Name = "Mr. Wizard"}, JsonRequestBehavior.AllowGet);
         }
 
     }
