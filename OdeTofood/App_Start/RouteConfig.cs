@@ -23,7 +23,8 @@ namespace OdeTofood
             // information. Because the routing engine looks at candidate routes using the routes in the order defined,
             // we must create the new route **before** the default route.
 
-            routes.MapRoute("Cuisine", "Cuisine/{name}", new {controller = "Cuisine", action = "Search"});
+            routes.MapRoute("Cuisine", "Cuisine/{name}",
+                new {controller = "Cuisine", action = "Search", name = UrlParameter.Optional});
 
             // /Home
 
