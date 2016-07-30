@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OdeTofood.Models;
 
 namespace OdeTofood.Controllers
 {
@@ -17,10 +18,13 @@ namespace OdeTofood.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
-            ViewBag.Location = "Houston, TX";
+            var model = new AboutModel
+            {
+                Name = "Mr. Wizard",
+                Location = "Houston, TX"
+            };
 
-            return View();
+            return View(model);
         }
 
         public ActionResult Contact()
