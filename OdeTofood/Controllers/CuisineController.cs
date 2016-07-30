@@ -13,7 +13,8 @@ namespace OdeTofood.Controllers
 
         public ActionResult Search(string name)
         {
-            return File(Server.MapPath("~/Content/site.css"), "text/css");
+            var message = Server.HtmlEncode(name);
+            return Json(new {Message = message, Name = "Mr. Wizard"});
         }
 
     }
