@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace OdeTofood
+namespace OdeToFood
 {
     public class FilterConfig
     {

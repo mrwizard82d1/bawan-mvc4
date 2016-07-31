@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using OdeTofood.Models;
+using OdeToFood.Models;
 
-namespace OdeTofood.Controllers
+namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {

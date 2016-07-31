@@ -8,10 +8,10 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using OdeTofood.Filters;
-using OdeTofood.Models;
+using OdeToFood.Filters;
+using OdeToFood.Models;
 
-namespace OdeTofood.Controllers
+namespace OdeToFood.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]

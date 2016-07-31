@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OdeTofood;
-using OdeTofood.Controllers;
+using OdeToFood;
+using OdeToFood.Controllers;
 
-namespace OdeTofood.Tests.Controllers
+namespace OdeToFood.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest

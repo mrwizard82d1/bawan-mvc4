@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OdeTofood.Models
+namespace OdeToFood.Models
 {
     public class AboutModel
     {
