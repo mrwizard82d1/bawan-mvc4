@@ -43,6 +43,7 @@ We are showing the latest @Model.Count() reviews.
         <td>
 @*            @Html.DisplayFor(modelItem => item.Rating)*@
             R@(item.Rating)
+            @OdeToCode
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
