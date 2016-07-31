@@ -120,7 +120,7 @@ namespace OdeToFood.Controllers
             {
                 Id = 2,
                 Name = "Marrakesh",
-                City = "D. C.",
+                City = "<script>alert('xss')</script>",
                 Country = "USA",
                 Rating = 10
             },
